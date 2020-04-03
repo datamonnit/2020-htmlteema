@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px/1.5;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header-tyylit */
+header {
+    background-color: #35424a;
+    color: #f4f4f4;
+    padding: 10px 0;
+    min-height: 90px;
+}
+
+#logo {
+    float: left;
+}
+
+#logo img {
+    height: 50px;
+    padding: 5px;
+    display: block;
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 25px;
+}
+
+/* Showcase */
+#showcase {
+    min-height: 400px;
+    background-image: url('../img/screenofcode2.png');
+    text-align: center;
+    color: #f4f4f4;
+}
+
+#showcase h1 {
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+#showcase p {
+    font-size: 26px;
+}
