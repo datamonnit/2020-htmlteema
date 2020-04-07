@@ -17,12 +17,25 @@ body {
     overflow: hidden;
 }
 
+.highlight {
+    color: #a4bd39;
+    font-weight: bold;
+    transform: rotate(10deg);
+}
+
+.dark {
+    background-color: #35424a;
+    color: #f4f4f4;
+    padding: 10px;
+}
+
 /* Header-tyylit */
 header {
     background-color: #35424a;
     color: #f4f4f4;
     padding: 10px 0;
     min-height: 90px;
+    border-bottom: #a4bd39 3px solid;
 }
 
 #logo {
@@ -34,6 +47,8 @@ header {
     padding: 5px;
     display: block;
     float: left;
+    margin: -5px 5px 5px 0px;
+    transform: rotate(20deg);
 }
 
 header nav {
@@ -45,8 +60,9 @@ nav a {
     color: #f4f4f4;
     text-decoration: none;
     display: inline-block;
-    margin: 0 5px;
-    font-size: 25px;
+    margin: 10px 5px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 /* Showcase */
@@ -64,4 +80,81 @@ nav a {
 
 #showcase p {
     font-size: 26px;
+}
+
+/* Newsletter */
+#newsletter {
+    background-color:  #35424a;
+    color: #f4f4f4;
+    padding: 15px 0;
+}
+
+#newsletter h2 {
+    width: 50%;
+    float: left;
+}
+
+#newsletter form {
+    width: 50%;
+    float: right;
+}
+
+#newsletter input[type="email"] {
+    height: 35px;
+    margin: 15px 0;
+    padding: 4px;
+    font-size: 1em;
+    width: 65%;
+}
+#newsletter button {
+    height: 35px;
+    font-size: 1.1em;
+    width: 30%;
+    background-color: #a4bd39;
+    border: 0;
+}
+
+/* Boxes */
+#boxes {
+    margin: 40px 0;
+}
+
+.box {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 10px;
+}
+
+.box img {
+    width: 150px;
+}
+
+/* Main */
+#main article {
+    float: left;
+    width: 65%;
+    line-height: 1.5em;
+}
+
+#main aside {
+    float: right;
+    width: 30%;
+    line-height: 1.5em;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+#main aside img {
+    max-width: 100%;
+}
+
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #35424a;
+    color: #f4f4f4;
+    text-align: center;
+    border-top: #a4bd39 3px solid;
 }
