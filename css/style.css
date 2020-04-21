@@ -49,7 +49,37 @@ header {
     float: left;
     margin: -5px 5px 5px 0px;
     transform: rotate(20deg);
+
+    /* Animointi */
+    animation-name: kissa;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
 }
+
+
+@keyframes kissa {
+    10% { transform: rotate(-10deg);}
+    50% { transform: rotate(50deg);}
+}
+
+.pulse {
+    -webkit-animation: pulse 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.2;
+}
+
+@-webkit-keyframes pulse {
+    0% { 
+        opacity: 0.2;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.2;
+    }
+  }
 
 header nav {
     float: right;
@@ -63,6 +93,10 @@ nav a {
     margin: 10px 5px;
     font-size: 20px;
     text-transform: uppercase;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 /* Showcase */
@@ -250,6 +284,31 @@ footer {
 
     #dark-form {
         margin-top: 0 !important;
+    }
+
+    /* Menu-toggle -painike */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        padding: 0;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu-toggle div {
+        width: 35px;
+        height: 5px;
+        background-color: #f4f4f4;
+        margin: 6px 0;
+    }
+
+    /* Nav-elementti */
+    header nav {
+        display: none;
+    }
+
+    .responsive-menu {
+        display: block;
     }
 
 }
